@@ -1,82 +1,104 @@
 <div class="homeBackground">
   <header fxLayout="row">
-    <!--    <mat-toolbar color="primary" class="mat-elevation-z6" fxLayout="row">-->
-    <!--      <a tabindex="-1" [ngStyle]="{'text-decoration': 'none','color': 'white'}"-->
-    <!--         href="" [routerLink]="['/']">-->
-    <!--        <img src="/assets/icons/logo.png" height="50px" alt="logo technokarta">-->
-    <!--        Технокарта</a>-->
-    <!--      <div fxFlex="">-->
-    <!--        <div fxFlex="" fxLayout="row wrap" fxLayoutAlign="end center"-->
-    <!--             *ngIf="!(isHandset$ | async)">-->
-    <!--          <a class="a-ref" [href]="env.aboutUrl">О сервисе</a>-->
-    <!--          <a class="a-ref" [href]="env.contactsUrl">Обратная связь</a>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </mat-toolbar>-->
+    <mat-toolbar color="primary" class="mat-elevation-z6" fxLayout="row">
+      <a tabindex="-1" [ngStyle]="{'text-decoration': 'none','color': 'white'}"
+         fxLayout="row" fxLayoutAlign="center" href="" routerLink="/">
+        <img src="/assets/icons/logo.png" height="50px" alt="logo technokarta">
+        <div style="margin: auto 5px">Технокарта</div>
+      </a>
+      <div fxFlex="">
+      </div>
+      <div fxFlex="" fxLayout="row wrap" fxLayoutAlign="end center"
+           *ngIf="!(isHandset$ | async)">
+        <a class="a-ref" href="" routerLink="/about">О сервисе</a>
+        <a class="a-ref" href="" routerLink="/contacts">Обратная связь</a>
+      </div>
+    </mat-toolbar>
   </header>
   <div class="div1">
     <div class="div1_1">
-      <div class="div1_2" fxLayout="column" fxLayoutAlign="center start">
-        <div class="div1_4" fxLayout="column">
-          <div [ngClass]="{'welkText_l': !(isHandset$ | async), 'welkText_s': (isHandset$ | async)}">
-            Бесплатный онлайн-сервис<br>поиска спецтехники в аренду.
-          </div>
-          <a href="https://app.technokarta.ru/">
-            <button mat-raised-button="" tabindex="-1"
-                    [ngClass]="{'btn_l': !(isHandset$ | async), 'btn_s': (isHandset$ | async)}"
-                    color="accent" matTooltipPosition="above">НАЧАТЬ
-            </button>
-          </a>
+      <div class="div1_2" id="1_2" fxLayout="column" fxLayoutAlign="center stretch">
+        <div [ngClass]="{'div1_4': !(isHandset$ | async),
+              'div1_4small': (isHandset$ | async)}" id="1_4" fxLayout="column">
+            <div fxLayout="row wrap" fxLayoutAlign="end">
+              <div style="margin: 12px">
+                <div fxLayout="column">
+                  <div [ngClass]="{'welkText_l': !(isHandset$ | async),
+              'welkText_s': (isHandset$ | async)}">ПОИСК СПЕЦТЕХНИКИ В АРЕНДУ
+                  </div>
+                  <div style="font-size: medium; color: white">БЕСПЛАТНЫЙ ОНЛАЙН-СЕРВИС</div>
+                </div>
+              </div>
+                <a href="https://app.technokarta.ru/">
+                  <button mat-raised-button="" tabindex="-1"
+                          [ngClass]="{'btn_l': !(isHandset$ | async), 'btn_s': (isHandset$ | async)}"
+                          color="accent" matTooltipPosition="above">НАЧАТЬ
+                  </button>
+                </a>
+            </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="dvider leanerBack1"></div>
+<!--  <div class="dvider leanerBack1"></div>-->
   <!--  first info block-->
-  <div class="div2" fxLayout="row wrap" fxLayoutAlign="center none">
-    <div fxFlex="50" fxLayout="column" fxLayoutAlign="center none"
-         [ngClass]="{'div2_1_l': !(isHandset$ | async), 'div2_1_s': (isHandset$ | async)}">
-      <p>Вы владелец экскаватора или погрузчика? Откройте представительство своего парка техники. Расширяйте свои
-        деловые
-        контакты с помощью сервиса "Технокарта".</p>
-    </div>
-    <div class="div2_2" fxFlex="" fxLayout="column" fxLayoutAlign="center center">
-      <img src="/assets/pics/excavator.jpg" class="div2_2img">
+  <div fxLayout="column" fxLayoutAlign="center center" style="background-color: white">
+    <div class="div2" fxLayout="row wrap" fxLayoutAlign="center none">
+      <div fxFlex="50" fxLayout="column" fxLayoutAlign="center none"
+           [ngClass]="{'div2_1_l': !(isHandset$ | async), 'div2_1_s': (isHandset$ | async)}">
+        <p>Вы владелец экскаватора или погрузчика? Откройте представительство своего парка техники. Расширяйте свои
+          деловые
+          контакты с помощью сервиса "Технокарта".</p>
+      </div>
+      <div class="div2_2" fxFlex="" fxLayout="column" fxLayoutAlign="center center">
+        <img src="/assets/pics/excavator.jpg" class="div2_2img">
+      </div>
     </div>
   </div>
-  <div class="dvider leanerBack1"></div>
+<!--  <div class="dvider leanerBack1"></div>-->
   <!--  second info block-->
-  <div class="div2dark" fxLayout="row wrap" fxLayoutAlign="center none" dir="rtl">
-    <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center" dir="ltr"
-         [ngClass]="{'div2_1_l': !(isHandset$ | async), 'div2_1_s': (isHandset$ | async)}">
-      <p>Ищите специализированную технику в аренду? Оптимизируйте свое время, используйте
-        быстрые и удобные инструменты поиска.</p>
-    </div>
-    <div class="div2_2" fxFlex="" fxLayout="column" fxLayoutAlign="center">
-      <img src="/assets/pics/crane.jpg" class="div2_2img">
+  <div fxLayout="column" fxLayoutAlign="center center" style="background-color: #212121">
+    <div class="div2dark" fxLayout="row wrap" fxLayoutAlign="center none" dir="rtl">
+      <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center" dir="ltr"
+           [ngClass]="{'div2_1_l': !(isHandset$ | async), 'div2_1_s': (isHandset$ | async)}">
+        <p>Ищите специализированную технику в аренду? Оптимизируйте свое время, используйте
+          быстрые и удобные инструменты поиска.</p>
+      </div>
+      <div class="div2_2" fxFlex="" fxLayout="column" fxLayoutAlign="center">
+        <img src="/assets/pics/crane.jpg" class="div2_2img">
+      </div>
     </div>
   </div>
-  <div class="dvider leanerBack1"></div>
+<!--  <div class="dvider leanerBack1"></div>-->
   <!--  third info block-->
-  <div class="div2" fxLayout="row wrap" fxLayoutAlign="center none">
-    <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center"
-         [ngClass]="{'div2_1_l': !(isHandset$ | async), 'div2_1_s': (isHandset$ | async)}">
-      <p>Ваш контакт состоится в считанные секунды, без посредников и абсолютно бесплатно!</p>
-    </div>
-    <div class="div2_2" fxFlex="" fxLayout="column" fxLayoutAlign="center"
-         style="background-color: #9e9e9e">
-      <img src="/assets/pics/handshake.jpg" class="div2_2img">
+  <div fxLayout="column" fxLayoutAlign="center center" style="background-color: white">
+    <div class="div2" fxLayout="row wrap" fxLayoutAlign="center none">
+      <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center"
+           [ngClass]="{'div2_1_l': !(isHandset$ | async), 'div2_1_s': (isHandset$ | async)}">
+        <p>Ваш контакт состоится в считанные секунды, без посредников и абсолютно бесплатно!</p>
+      </div>
+      <div class="div2_2" fxFlex="" fxLayout="column" fxLayoutAlign="center"
+           style="background-color: #9e9e9e">
+        <img src="/assets/pics/handshake.jpg" class="div2_2img">
+      </div>
     </div>
   </div>
-  <div class="dvider leanerBack1"></div>
-  <!--  <footer fxLayout="column" fxLayoutAlign="center center" class="footer-div">-->
-  <!--    <div fxFlex="" fxLayout="column" class="ml-4 mr-4 footer-opened">-->
-  <!--      <div fxFlex="" fxLayout="row wrap" fxLayoutAlign="center center">-->
-  <!--        <a class="a-ref" [href]="env.aboutUrl">О сервисе</a>-->
-  <!--        <a class="a-ref" [href]="env.contactsUrl">Обратная связь</a>-->
-  <!--      </div>-->
-  <!--      <div fxFlexAlign="center">&copy; BIDOMI, 2020-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  </footer>-->
+  <div class="dvider leanerBack1" fxLayout="column" fxLayoutAlign="center center">
+    <a href="https://app.technokarta.ru/">
+      <button mat-raised-button="" tabindex="-1"
+              [ngClass]="{'btn_l': !(isHandset$ | async), 'btn_s': (isHandset$ | async)}"
+              color="warn" matTooltipPosition="above">НАЧАТЬ
+      </button>
+    </a>
+  </div>
+    <footer fxLayout="column" fxLayoutAlign="center center" class="footer-div">
+      <div fxFlex="" fxLayout="column" class="ml-4 mr-4 footer-opened">
+        <div fxFlex="" fxLayout="row wrap" fxLayoutAlign="center center">
+          <a class="a-ref" href="" routerLink="/about">О сервисе</a>
+          <a class="a-ref" href="" routerLink="/contacts">Обратная связь</a>
+        </div>
+        <div fxFlexAlign="center">&copy; BIDOMI, 2020
+        </div>
+      </div>
+    </footer>
 </div>

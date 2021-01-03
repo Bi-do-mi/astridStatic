@@ -1,44 +1,39 @@
-$color: rgba(251, 192, 45, 0.5);
-$transparent: rgba(0, 0, 0, 0);
 .leanerBack1 {
-  background: linear-gradient(-45deg,
-  $transparent 49.9%,
-  $color 49.9%, $color 80%,
-  $transparent 60%
-  ),
-  linear-gradient(-45deg,
-  $color 20%,
-  $transparent 10%
-  );
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49.9%, rgba(251, 192, 45, 0.5) 49.9%, rgba(251, 192, 45, 0.5) 80%, rgba(0, 0, 0, 0) 60%), linear-gradient(-45deg, rgba(251, 192, 45, 0.5) 20%, rgba(0, 0, 0, 0) 10%);
   background-size: 2em 2em;
-  background-color: rgba(33, 33, 33, 1);
+  background-color: #212121;
 }
 
-.contacts_div{
+.contacts_div {
   min-width: 100%;
   min-height: 100%;
   position: absolute;
 }
-mat-card{
+
+mat-card {
   max-width: 90%;
   max-height: 90%;
 }
-img{
+
+img {
   max-height: 600px;
   max-width: 100%;
   display: block;
 }
-.box{
+
+.box {
   top: 30px;
   left: 30px;
   position: absolute;
   width: 60%;
 }
-.box-min{
+
+.box-min {
   padding: 10px;
   background-color: white;
 }
-.cont{
+
+.cont {
   max-height: 100%;
   max-width: 100%;
 }
@@ -67,19 +62,21 @@ img{
   color: #fbc911;
 }
 
-.a-ref:active {
-}
 .h5 {
   font-size: 1.6rem;
 }
+
 .btn_s {
   font-size: 1.6em;
   border-radius: 0px;
   margin: 8px;
 }
+
 .btn_l {
   font-size: 1.4em;
   line-height: 1.6em;
   border-radius: 0px;
   margin: 12px;
 }
+
+/*# sourceMappingURL=contacts.component.css.map */

@@ -17,6 +17,7 @@ $transparent: rgba(0, 0, 0, 0);
   min-width: 100%;
   min-height: 100%;
   position: absolute;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 mat-card{
   max-width: 90%;
@@ -40,4 +41,45 @@ img{
 .cont{
   max-height: 100%;
   max-width: 100%;
+}
+
+.a-ref {
+  margin: 0px;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 10px 0;
+  font-size: 16px;
+}
+
+.a-ref:link {
+  color: white;
+}
+
+.a-ref:visited {
+  color: white;
+}
+
+.a-ref:focus {
+  color: #fbc911;
+}
+
+.a-ref:hover {
+  color: #fbc911;
+}
+
+.a-ref:active {
+}
+.h5 {
+  font-size: 1.6rem;
+}
+.btn_s {
+  font-size: 1.6em;
+  border-radius: 0px;
+  margin: 8px;
+}
+.btn_l {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  border-radius: 0px;
+  margin: 12px;
 }
