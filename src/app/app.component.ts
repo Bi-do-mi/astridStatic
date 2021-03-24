@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
           this.metaService.updateTag({name: 'description', content: child.snapshot.data['description']});
         }
         if (child.snapshot.data['keywords']) {
-          this.metaService.updateTag({name: 'keywords', content: child.snapshot.data['description']});
+          this.metaService.updateTag({name: 'keywords', content: child.snapshot.data['keywords']});
         }
         if (child.snapshot.data['robots']) {
           this.metaService.updateTag({name: 'robots', content: child.snapshot.data['robots']});
